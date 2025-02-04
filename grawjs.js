@@ -34,7 +34,7 @@
         player.dolary -= obstawionaKwota;
         
         let szansa = Math.random();
-        if (szansa < player.szczescie / 100) {  // Zwiększono wpływ szczęścia na wynik
+        if (szansa < player.szczescie / 10) {  // Zwiększono wpływ szczęścia na wynik
             player.los = player.obstawiono; 
         } else {
             player.los = Math.floor(Math.random() * 2);
