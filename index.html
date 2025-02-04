@@ -10,13 +10,15 @@
     <div class="container">
         <h2><em>Orzeł czy Reszka?</em></h2>
         <p>Twoje pieniądze: <span id="cashP">100</span> $</p>
+        <p>Szczęście: <span id="luckP">1</span></p>
         <input type="number" id="moneyInput" placeholder="O ile obstawiasz?">
         <p>Co obstawiasz?</p>
         <button onclick="orzelKlik()">Orzeł!</button>
         <button onclick="reszkaKlik()">Reszka!</button>
-        <button onclick="klik()">Losuj!</button>
-        <button onclick="zapisz()">Zapisz grę</button>
-        <button onclick="wczytaj()">Wczytaj grę</button>
+        <br><br>
+        <button onclick="klik()" class="klick">Losuj!</button>
+        <button onclick="kupUlepszenie()" id="upgButton">Kup ulepszenie szczęścia (1000$)</button>
+        <button onclick="resetGame()">Spróbuj ponownie</button>
     </div>
 <script src="grawjs.js"></script>
 </body>
